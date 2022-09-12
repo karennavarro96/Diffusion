@@ -14,3 +14,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 module load Anaconda3
+conda activate Diffusion
