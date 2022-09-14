@@ -28,7 +28,7 @@ source $DIFF_PATH/setup.sh
 
 # Merge
 echo "Merge all.h5" 2>&1 | tee -a log_nexus_"${jobid}".txt
-python $DIFF_PATH/Merge.py $INPUT_FOLDER/$TYPE 2>&1 | tee -a log_nexus_"${jobid}".txt
+python $DIFF_PATH/Merge.py $INPUT_FOLDER/$TYPE/* 2>&1 | tee -a log_nexus_"${jobid}".txt
 
 # Filter
 echo "Running Filter Stage" 2>&1 | tee -a log_nexus_"${jobid}".txt
